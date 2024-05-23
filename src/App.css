@@ -1,3 +1,9 @@
-.bachelors{
+.BachelorsDiv{
     display: flex;
+    flex-direction: column;
+}
+
+.Bachelors{
+    display: flex;
+    flex-direction: row;
 }

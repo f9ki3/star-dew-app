@@ -23,7 +23,7 @@ const bachelors = [
 
 // Function to render a name
 function Name({ name }) {
-  return <h1>{name}</h1>;
+  return <p>{name}</p>;
 }
 
 // Function to render an image
@@ -34,13 +34,16 @@ function Image({ img }) {
 // BachelorName component to render all names and images
 export default function BachelorName() {
   return (
-    <div className='bachelors'>
-      {bachelors.map((bachelor, index) => (
-        <div key={index}>
-          <Name name={bachelor.name} />
-          <Image img={bachelor.img} />
-        </div>
-      ))}
+    <div className='BachelorsDiv'>
+      <h1>Bachelors</h1>
+      <div className='Bachelors'>
+        {bachelors.map((bachelor, index) => (
+          <div  key={index}>
+            <Name name={bachelor.name} />
+            <Image img={bachelor.img} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
